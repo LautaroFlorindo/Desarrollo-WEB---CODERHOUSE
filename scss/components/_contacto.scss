@@ -4,14 +4,17 @@
 
     h1 {
         @extend %titles;
+        @media(max-width:576px){
+            font-size: 26px;
+        }
     }
+    
 }
 
 .redesFormulario {
     @include di-flex(row, space-around, space-around);
     flex-wrap: wrap;
     width: 100%;
-    margin-bottom: $mrg-bot;
 
     @media(max-width:768px) {
         flex-direction: column;
@@ -26,6 +29,7 @@
     border-radius: 10px;
     color: white;
     padding: map-get($bg-pd, pdmax);
+    margin-bottom: $mrg-bot;
 
 
     h2 {
