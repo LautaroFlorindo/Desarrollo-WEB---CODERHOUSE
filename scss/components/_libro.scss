@@ -1,0 +1,61 @@
+
+#libroReconec {
+    display: flex;
+    justify-content: center;
+    margin-bottom: $mrg-bot;
+    flex-wrap: wrap-reverse;
+}
+
+.textoLibro {
+    grid-area: textoLibro;
+    @include di-flex(column, flex-start, center);
+    width: 450px;
+    background-color: #712c33;
+    border-radius: 10px;
+
+    h3 {
+        color: #ffffff;
+        text-align: center;
+        padding: 20px 20px 0px;
+        font-weight: $f-weig-h;
+    }
+
+    p {
+        color: map-get($bg-pd, whi);
+        padding: map-get($bg-pd, pdmid1);
+    }
+
+    ul {
+        li {
+            margin: 25px;
+
+            a {
+                text-decoration: none;
+                padding: 10px;
+                color: #712c33;
+            }
+        }
+
+    }
+    @media(max-width:576px){
+        width: 80vw;
+    }
+}
+
+.imgLibro {
+    width: 450px;
+    border-radius: 10px;
+
+    @media(max-width:576px){
+        width: 80vw;
+    }
+}
+
+.divBotonLibro{
+    @include di-flex(row, center, flex-start);
+    margin-bottom: 25px;
+}
+
+.botonLibro{
+    @extend %boton1;
+}
