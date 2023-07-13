@@ -22,19 +22,19 @@ a {
   }
 }
 
-.botonLibro, .accordBoton, .botonBlog {
+.botonLibro, .accordBoton, .botonForm, .botonBlog {
   background-color: #ffffff;
   color: #712c33;
   border-color: transparent;
   font-weight: bold;
   transition: all ease 0.3s;
 }
-.botonLibro:hover, .accordBoton:hover, .botonBlog:hover {
+.botonLibro:hover, .accordBoton:hover, .botonForm:hover, .botonBlog:hover {
   transform: scale(105%);
   background-color: #c86c28;
   border-color: transparent;
 }
-.botonLibro:active, .accordBoton:active, .botonBlog:active {
+.botonLibro:active, .accordBoton:active, .botonForm:active, .botonBlog:active {
   background-color: #c86c28 !important;
   border-color: transparent !important;
   transition: 0.1s ease;
@@ -527,13 +527,40 @@ body {
   }
 }
 
-.supuestoForm {
-  width: 100%;
+.formContacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  margin-bottom: 20px;
 }
-@media (max-width: 768px) {
-  .supuestoForm {
-    height: 350px;
-  }
+.formContacto legend {
+  text-align: center;
+  margin: 0;
+}
+.formContacto legend h3 {
+  margin: 0;
+}
+.formContacto input {
+  margin-top: 10px;
+}
+.formContacto textarea {
+  resize: none;
+  margin-top: 10px;
+}
+
+.botonForm {
+  border-radius: 10px;
+  width: 100px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.captchaButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 .gridRedes {
