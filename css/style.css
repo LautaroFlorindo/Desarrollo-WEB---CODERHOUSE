@@ -152,10 +152,6 @@ body {
   object-fit: cover;
 }
 
-.carruselImg1 {
-  background-image: url(../../img/index/florvestido.png);
-}
-
 .textoCarrusel {
   width: 100%;
   left: 0;
